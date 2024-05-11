@@ -8,7 +8,8 @@ const cookieParser = require('cookie-parser');
 const WEBCHAT_SECRET = process.env.WEBCHAT_SECRET;
 const DIRECTLINE_ENDPOINT_URI = process.env.DIRECTLINE_ENDPOINT_URI;
 const APP_SECRET = process.env.APP_SECRET;
-const directLineTokenEp = `https://${DIRECTLINE_ENDPOINT_URI || "directline.botframework.com"}/v3/directline/tokens/generate`;
+// const directLineTokenEp = `https://${DIRECTLINE_ENDPOINT_URI || "directline.botframework.com"}/v3/directline/tokens/generate`;
+const directLineTokenEp = `https://europe.directline.botframework.com/v3/directline/tokens/generate`;
 
 // Initialize the web app instance,
 const app = express();
