@@ -8,7 +8,7 @@ A simple web page that allows users to communicate with the [Azure Health Bot](h
 
 1.Deploy the website:
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/oscarmh/HealthBotContainer/master/azuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Foscarmh%2FHealthBotContainer%2Fmaster%2Fazuredeploy.json)
 
 2.Set the following environment variables:
 
