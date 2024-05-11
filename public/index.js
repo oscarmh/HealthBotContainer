@@ -74,7 +74,8 @@ function initBotConversation() {
     };
     let domain = undefined;
     if (tokenPayload.directLineURI) {
-        domain =  "https://" +  tokenPayload.directLineURI + "/v3/directline";
+        // domain =  "https://" +  tokenPayload.directLineURI + "/v3/directline";
+        domain = "https://europe.directline.botframework.com/v3/directline";
     }
     let location = undefined;
     if (tokenPayload.location) {
