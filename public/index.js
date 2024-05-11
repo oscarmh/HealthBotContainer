@@ -78,15 +78,17 @@ function initBotConversation() {
         domain = "https://europe.directline.botframework.com/v3/directline";
     }
     let location = undefined;
-    if (tokenPayload.location) {
-        location = tokenPayload.location;
-    } else {
-        // set default location if desired
-        /*location = {
-            lat: 44.86448450671394,
-            long: -93.32597021107624
-        }*/
-    }
+    // COMENTAMOS TODO ESTO
+    //if (tokenPayload.location) {
+    //    location = tokenPayload.location;
+    //} else {
+    //    // set default location if desired
+    //    /*location = {
+    //        lat: 44.86448450671394,
+    //        long: -93.32597021107624
+    //    }*/
+    // }
+    // HASTA AQUI
     var botConnection = window.WebChat.createDirectLine({
         token: tokenPayload.connectorToken,
         domain: domain
