@@ -61,7 +61,7 @@
         },
         "repoUrl": {
             "type": "string",
-            "defaultValue": "https://github.com/microsoft/HealthBotContainerSample.git",
+            "defaultValue": "https://github.com/oscarmh/HealthBotContainer",
             "metadata": {
                 "description": "The URL for the GitHub repository that contains the project to deploy."
             }
