@@ -72,7 +72,7 @@
             "metadata": {
                 "description": "The branch of the GitHub repository to use."
             }
-        }
+        },
         "DIRECTLINE_ENDPOINT_URI": {
             "type": "string",
             "defaultValue":"directline.botframework.com",
