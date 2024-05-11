@@ -73,6 +73,19 @@
                 "description": "The branch of the GitHub repository to use."
             }
         }
+        "DIRECTLINE_ENDPOINT_URI": {
+            "type": "string",
+            "defaultValue":"directline.botframework.com",
+            "allowedValues": [
+                "asia.directline.botframework.com",
+                "europe.directline.botframework.com",
+                "northamerica.directline.botframework.com",
+                "directline.botframework.com"
+            ],
+            "metadata": {
+                "description": "Chatbot endpoint"
+            }
+        }
     },
     "variables":{
         "alwaysOn": true,
@@ -180,6 +193,10 @@
                         {
                             "name": "WEBSITE_NODE_DEFAULT_VERSION",
                             "value": "[variables('nodeVersion')]"
+                        },
+                        {
+                          "name": "DIRECTLINE_ENDPOINT_URI",
+                          "value": "[parameters('DIRECTLINE_ENDPOINT_URI')]"
                         }
                     ],
                     "metadata": [
