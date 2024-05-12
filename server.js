@@ -1,5 +1,5 @@
 require('dotenv').config();
-const crypto = require('crypto');
+const crypto = require('crypto');
 const express = require("express");
 const path = require("path");
 const jwt = require("jsonwebtoken");
@@ -7,8 +7,10 @@ const fetch = require('node-fetch');
 const cookieParser = require('cookie-parser');
 const WEBCHAT_SECRET = process.env.WEBCHAT_SECRET;
 //const DIRECTLINE_ENDPOINT_URI = process.env.DIRECTLINE_ENDPOINT_URI;
+// en el original deberia tomarlo de la configuracion de Azure
 const DIRECTLINE_ENDPOINT_URI = `https://europe.directline.botframework.com`;
 const APP_SECRET = process.env.APP_SECRET;
+// lo dejariamos en funcion de la configuracion propuesta por el programador del bot
 // const directLineTokenEp = `https://${DIRECTLINE_ENDPOINT_URI || "directline.botframework.com"}/v3/directline/tokens/generate`;
 const directLineTokenEp = `https://europe.directline.botframework.com/v3/directline/tokens/generate`;
 
